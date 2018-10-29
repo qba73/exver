@@ -16,5 +16,12 @@ func TestFixDash(t *testing.T) {
 	if fixDash(input) != expected {
 		t.Errorf("%s != %s\n", input, expected)
 	}
+}
 
+func TestFixSpaces(t *testing.T) {
+	input := "X 23 North"
+	expected := "X_23_NORTH"
+	if fixSpaces(input) != expected {
+		t.Errorf("%s != %s\n", input, expected)
+	}
 }

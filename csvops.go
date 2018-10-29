@@ -14,3 +14,9 @@ func fixDash(s string) string {
 	s = strings.ToUpper(s)
 	return s
 }
+
+func fixSpaces(s string) string {
+	s = strings.Replace(s, " ", "_", 5)
+	s = strings.ToUpper(s)
+	return s
+}
