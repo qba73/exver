@@ -26,12 +26,12 @@ func TestFixSpaces(t *testing.T) {
 	}
 }
 
-func TestHeaderType(t *testing.T)  {
+func TestHeaderType(t *testing.T) {
 	tp := map[string]int{
 		"Sn.O": 1,
 		"X-SD": 2,
 		"X SD": 3,
-		"XSD": 4,
+		"XSD":  4,
 	}
 	for k, v := range tp {
 		h := headerType(k)

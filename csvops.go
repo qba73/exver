@@ -24,7 +24,7 @@ func fixSpaces(s string) string {
 func headerType(s string) int {
 	var h int
 	if strings.Contains(s, ".") {
-		h =1
+		h = 1
 	} else if strings.Contains(s, "-") {
 		h = 2
 	} else if strings.Contains(s, " ") {
